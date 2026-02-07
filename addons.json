@@ -9,6 +9,11 @@
       "repo": "dangerouslaser/script.piccap",
       "addon_id": "script.piccap",
       "asset_pattern": "script.piccap-*.zip"
+    },
+    {
+      "repo": "dangerouslaser/script.skinsync",
+      "addon_id": "script.skinsync",
+      "asset_pattern": "script.skinsync-*.zip"
     }
   ]
 }

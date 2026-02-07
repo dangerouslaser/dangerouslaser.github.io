@@ -39,11 +39,13 @@ def fetch_latest_release(repo):
 def download_asset(repo, tag, pattern, dest_dir):
     """Download a release asset matching the pattern."""
     dest_dir.mkdir(parents=True, exist_ok=True)
-    subprocess.run(
+    result = subprocess.run(
         ["gh", "release", "download", tag, "--repo", repo,
          "--pattern", pattern, "--dir", str(dest_dir), "--clobber"],
-        check=True
+        capture_output=True, text=True
     )
+    if result.returncode != 0:
+        return None
     # Find the downloaded file
     for f in dest_dir.iterdir():
         if f.suffix == ".zip":

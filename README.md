@@ -4,7 +4,8 @@ Kodi addon repository hosted on GitHub Pages. Automatically updated when addons 
 
 ## Installing in Kodi
 
-1. Download the latest `repository.dangerouslaser-x.x.x.zip` from [Releases](https://github.com/dangerouslaser/repository.dangerouslaser/releases)
+1. In Kodi: **File Manager > Add source** > enter `https://dangerouslaser.github.io/`
+2. Or download the latest `repository.dangerouslaser-x.x.x.zip` from [Releases](https://github.com/dangerouslaser/dangerouslaser.github.io/releases)
 2. In Kodi: **Settings > Add-ons > Install from zip file**
 3. Select the downloaded zip
 4. The repository is now installed - browse addons via **Install from repository > dangerouslaser Repository**
@@ -37,7 +38,7 @@ Add this to your addon's release workflow:
 ```yaml
 - name: Update Kodi repository
   run: |
-    gh api repos/dangerouslaser/repository.dangerouslaser/dispatches \
+    gh api repos/dangerouslaser/dangerouslaser.github.io/dispatches \
       -f event_type=addon-released
   env:
     GH_TOKEN: ${{ secrets.REPO_DISPATCH_TOKEN }}

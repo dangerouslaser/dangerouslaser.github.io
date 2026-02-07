@@ -8,9 +8,9 @@
   </requires>
   <extension point="xbmc.addon.repository">
     <dir>
-      <info compressed="false">https://dangerouslaser.github.io/repository.dangerouslaser/addons.xml</info>
-      <checksum>https://dangerouslaser.github.io/repository.dangerouslaser/addons.xml.md5</checksum>
-      <datadir zip="true">https://dangerouslaser.github.io/repository.dangerouslaser</datadir>
+      <info compressed="false">https://dangerouslaser.github.io/addons.xml</info>
+      <checksum>https://dangerouslaser.github.io/addons.xml.md5</checksum>
+      <datadir zip="true">https://dangerouslaser.github.io</datadir>
       <hashes>md5</hashes>
     </dir>
   </extension>
@@ -18,6 +18,6 @@
     <summary lang="en_GB">dangerouslaser Kodi Addon Repository</summary>
     <description lang="en_GB">Install and update Kodi addons by dangerouslaser, including Verse web interface and more.</description>
     <platform>all</platform>
-    <source>https://github.com/dangerouslaser/repository.dangerouslaser</source>
+    <source>https://github.com/dangerouslaser/dangerouslaser.github.io</source>
   </extension>
 </addon>

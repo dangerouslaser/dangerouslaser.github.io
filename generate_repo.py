@@ -203,15 +203,19 @@ def generate_index_pages(root_dir):
     """Generate index.html files that mimic directory listings for Kodi."""
     for dirpath, dirnames, filenames in os.walk(root_dir):
         dirpath = Path(dirpath)
+        is_root = dirpath == root_dir
         entries = []
 
-        # Add subdirectories
-        for d in sorted(dirnames):
-            entries.append(f'<a href="{d}/">{d}/</a>')
+        if not is_root:
+            # Subdirectories only in addon folders
+            for d in sorted(dirnames):
+                entries.append(f'<a href="{d}/">{d}/</a>')
 
-        # Add files
+        # Add files - at root level only show zips (for Kodi's "Install from zip" browser)
         for f in sorted(filenames):
             if f == "index.html":
+                continue
+            if is_root and not f.endswith(".zip"):
                 continue
             entries.append(f'<a href="{f}">{f}</a>')
 

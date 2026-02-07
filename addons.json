@@ -4,6 +4,11 @@
       "repo": "dangerouslaser/verse",
       "addon_id": "webinterface.verse",
       "asset_pattern": "webinterface.verse-*.zip"
+    },
+    {
+      "repo": "dangerouslaser/script.piccap",
+      "addon_id": "script.piccap",
+      "asset_pattern": "script.piccap-*.zip"
     }
   ]
 }

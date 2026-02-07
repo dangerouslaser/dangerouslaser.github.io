@@ -190,9 +190,34 @@ def main():
     addons_md5_path = OUTPUT_DIR / "addons.xml.md5"
     addons_md5_path.write_text(md5_string(addons_xml))
 
+    # Generate directory index pages for Kodi's HTTP file browser
+    generate_index_pages(OUTPUT_DIR)
+
     print(f"\nRepository generated in {OUTPUT_DIR}/")
     print(f"  addons.xml ({len(addon_xmls)} addons)")
     print(f"  addons.xml.md5")
+    print(f"  index.html (directory listings)")
+
+
+def generate_index_pages(root_dir):
+    """Generate index.html files that mimic directory listings for Kodi."""
+    for dirpath, dirnames, filenames in os.walk(root_dir):
+        dirpath = Path(dirpath)
+        entries = []
+
+        # Add subdirectories
+        for d in sorted(dirnames):
+            entries.append(f'<a href="{d}/">{d}/</a>')
+
+        # Add files
+        for f in sorted(filenames):
+            if f == "index.html":
+                continue
+            entries.append(f'<a href="{f}">{f}</a>')
+
+        links = "\n".join(entries)
+        html = f'<html><body>\n{links}\n</body></html>\n'
+        (dirpath / "index.html").write_text(html, "utf-8")
 
 
 if __name__ == "__main__":

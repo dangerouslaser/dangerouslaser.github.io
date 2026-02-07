@@ -1,0 +1,9 @@
+{
+  "addons": [
+    {
+      "repo": "dangerouslaser/verse",
+      "addon_id": "webinterface.verse",
+      "asset_pattern": "webinterface.verse-*.zip"
+    }
+  ]
+}

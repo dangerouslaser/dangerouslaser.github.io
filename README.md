@@ -15,6 +15,8 @@ Kodi addon repository hosted on GitHub Pages. Automatically updated when addons 
 | Addon | Description |
 |-------|-------------|
 | [Verse](https://github.com/dangerouslaser/verse) | Modern web interface for Kodi |
+| [LG webOS TV Control](https://github.com/dangerouslaser/kodi-webos-control) | Control an LG webOS TV from Kodi: power, inputs, apps, picture presets, HDR rules |
+| [Estuary LG](https://github.com/dangerouslaser/skin.estuary.lg) | Estuary with LG TV integration |
 
 ## For Addon Developers
 

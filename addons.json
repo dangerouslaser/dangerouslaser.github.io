@@ -14,6 +14,16 @@
       "repo": "dangerouslaser/script.skinsync",
       "addon_id": "script.skinsync",
       "asset_pattern": "script.skinsync-*.zip"
+    },
+    {
+      "repo": "dangerouslaser/kodi-webos-control",
+      "addon_id": "service.webostv",
+      "asset_pattern": "service.webostv-*.zip"
+    },
+    {
+      "repo": "dangerouslaser/skin.estuary.lg",
+      "addon_id": "skin.estuary.lg",
+      "asset_pattern": "skin.estuary.lg-*.zip"
     }
   ]
 }

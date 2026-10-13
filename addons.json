@@ -24,6 +24,11 @@
       "repo": "dangerouslaser/skin.estuary.yblod",
       "addon_id": "skin.estuary.yblod",
       "asset_pattern": "skin.estuary.yblod-*.zip"
+    },
+    {
+      "repo": "dangerouslaser/kodi-denon-control",
+      "addon_id": "service.denonavr",
+      "asset_pattern": "service.denonavr-*.zip"
     }
   ]
 }

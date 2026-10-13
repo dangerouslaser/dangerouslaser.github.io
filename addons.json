@@ -21,9 +21,9 @@
       "asset_pattern": "service.webostv-*.zip"
     },
     {
-      "repo": "dangerouslaser/skin.estuary.lg",
-      "addon_id": "skin.estuary.lg",
-      "asset_pattern": "skin.estuary.lg-*.zip"
+      "repo": "dangerouslaser/skin.estuary.yblod",
+      "addon_id": "skin.estuary.yblod",
+      "asset_pattern": "skin.estuary.yblod-*.zip"
     }
   ]
 }

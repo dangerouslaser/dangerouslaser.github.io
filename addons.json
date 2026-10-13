@@ -29,6 +29,11 @@
       "repo": "dangerouslaser/kodi-denon-control",
       "addon_id": "service.denonavr",
       "asset_pattern": "service.denonavr-*.zip"
+    },
+    {
+      "repo": "dangerouslaser/kodi-sonos-control",
+      "addon_id": "service.sonos",
+      "asset_pattern": "service.sonos-*.zip"
     }
   ]
 }
